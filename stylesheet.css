@@ -15,8 +15,12 @@ a {
 }
 
 .superhero {
-    color:black;
+    color:blue;
     text-decoration:none;
+}
+
+li {
+    margin-left:10px;
 }
 
 li a:hover, #title a:hover {
