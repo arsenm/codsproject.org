@@ -10,13 +10,11 @@ body {
 }
 
 a {
-    color:white;
     text-decoration:none;
 }
 
-.superhero {
-    color:blue;
-    text-decoration:none;
+#title a, #navigation a {
+    color: white;
 }
 
 ul {
