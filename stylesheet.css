@@ -44,21 +44,21 @@ li a:hover, #title a:hover {
 
 #title {
     width:440px;
-    float:left;
     color:white;
     font-size:23pt;
     font-family:"Aldrich",sans-serif;
+    display: inline-block;
 }
 
 #navigation {
     width:440px;
-    float:right;
     color:white;
+    display: inline-block;
+    text-align: right;
 }
 
 #navigation ul {
     margin-top:8px;
-    float:right;
 }
 
 #navigation ul li {
@@ -74,8 +74,6 @@ li a:hover, #title a:hover {
     background-repeat:no-repeat;
     height:350px;
     /*background-position:center;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
     border-bottom:groove 5px white;
 }
 
@@ -92,24 +90,23 @@ h1 {
     padding:10px;
 }
 
-#container #wrap {
-    box-shadow:0 0 20px gray;
+#wrap {
+    box-shadow: 0 0 20px gray;
     border-radius:10px;
+    overflow: hidden;
 }
 
-#main #summary {
-    position:absolute;
+#summary {
     width:430px;
     height:350px;
     background-color:#c0c0c0;
     opacity:0.8;
-    border-top-left-radius:10px;
     font-size:14px;
     padding-left:10px;
     padding-right:10px;
 }
 
-#main #summary .feature {
+#summary .feature {
     padding-bottom:10px;
     padding-top:10px;
     width:430px;
@@ -122,54 +119,34 @@ h1 {
     font-family:sans-serif;
 }
 
-#links .link1, #links .link2, #links .link3, #links .link4 {
-    width:225px;
-    float:left;
-    color:white;
-    padding-top:10px;
-    text-align:center;
+#links {
+    white-space: nowrap;
+    font-size: 0;
 }
 
-#links .link1 {
-    background-color:gray;
-    height:100px;
-    border-bottom-left-radius:10px;
+#links a {
+    width: 225px;
+    font-size: 14pt;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    display: inline-block;
+    height: 70px;
 }
 
-#links .link2 {
-    background-color:#c0c0c0;
-    height:100px;
+#links a:nth-child(odd) {
+    background-color: gray;
 }
 
-#links .link2 a {
-    color:black;
+#links a:nth-child(even) {
+    background-color: #c0c0c0;
 }
 
-#links .link3 {
-    background-color:gray;
-    height:100px;
+#links a:hover {
+    background-color: #60AFFE;
 }
 
-#links .link4 {
-    background-color:#c0c0c0;
-    height:100px;
-    border-bottom-right-radius:10px;
-    width:225px;
-}
-
-#links .link4 a {
-    color:black;
-}
-
-#links .link2:hover, #links .link3:hover, #links .link4:hover {
-    background-color:#60AFFE;
-}
-
-#links .link1:hover {
-    background-image:url('images/matt.jpg');
-    background-size:cover;
-}
-
-#clear {
-    clear:both;
+.mattFace:hover {
+    background-image: url('images/matt.jpg');
+    background-size: cover;
 }
